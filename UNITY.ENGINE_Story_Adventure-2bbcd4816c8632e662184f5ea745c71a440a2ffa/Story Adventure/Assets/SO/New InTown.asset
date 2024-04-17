@@ -1,0 +1,223 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7137854940433765976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
+  m_Name: 2e784a3f-efdd-4e0f-989b-ab523c7de001
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You do you...
+  children: []
+  reverseDialogueToStartAfterNode: 0
+  isMonologue: 0
+--- !u!114 &-6650380707410961873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
+  m_Name: 5c3176ea-f388-4630-99dc-d1c299bb41ed
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Do you know where I can find more chickens in the area?
+  children:
+  - 89cde8b8-ea7e-42ef-8d76-d3e211865afc
+  reverseDialogueToStartAfterNode: 0
+  isMonologue: 0
+--- !u!114 &-6141713071992568712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
+  m_Name: 314e1b27-1480-4683-b724-e276ed722b72
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I see, see you around
+  children: []
+  reverseDialogueToStartAfterNode: 1
+  isMonologue: 0
+--- !u!114 &-4186178216416904225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
+  m_Name: acdafa9c-73b8-44e5-b7b9-d1ec18a50d5d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Whats your name?
+  children:
+  - 220d4c7a-1c3c-4ed6-8ef6-3edefbe290a2
+  reverseDialogueToStartAfterNode: 0
+  isMonologue: 0
+--- !u!114 &-3531031641845263321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
+  m_Name: 89cde8b8-ea7e-42ef-8d76-d3e211865afc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Head straight on, theres a farm
+  children: []
+  reverseDialogueToStartAfterNode: 0
+  isMonologue: 0
+--- !u!114 &-2908111149335477495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
+  m_Name: 8ad9264a-9725-45ea-a74d-b23afba18104
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Im Paul
+  children:
+  - 314e1b27-1480-4683-b724-e276ed722b72
+  reverseDialogueToStartAfterNode: 0
+  isMonologue: 0
+--- !u!114 &-1344100412333684549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
+  m_Name: cd572d63-b594-4fe2-a6f8-a81fd676006d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hello stranger.
+  children:
+  - 271f8290-a757-4490-a303-55faa79c61ed
+  - acdafa9c-73b8-44e5-b7b9-d1ec18a50d5d
+  - 84c49d7c-c395-45e1-ae39-39867a6a9ad3
+  - 5c3176ea-f388-4630-99dc-d1c299bb41ed
+  reverseDialogueToStartAfterNode: 0
+  isMonologue: 0
+--- !u!114 &-628470756545405495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
+  m_Name: 271f8290-a757-4490-a303-55faa79c61ed
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I do not want to speak. Bye!
+  children:
+  - 2e784a3f-efdd-4e0f-989b-ab523c7de001
+  reverseDialogueToStartAfterNode: 0
+  isMonologue: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60dba2d4daa20104f9757b66e4f4b64e, type: 3}
+  m_Name: New InTown
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -1344100412333684549}
+  - {fileID: -628470756545405495}
+  - {fileID: -4186178216416904225}
+  - {fileID: 6146453257776619100}
+  - {fileID: -7137854940433765976}
+  - {fileID: 9070126894154982748}
+  - {fileID: 5498297104391533010}
+  - {fileID: -6650380707410961873}
+  - {fileID: -3531031641845263321}
+  - {fileID: -2908111149335477495}
+  - {fileID: -6141713071992568712}
+--- !u!114 &5498297104391533010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
+  m_Name: 304e580c-1293-42fd-ac79-4679ac5372c8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Is Madrid, huge hity btw.
+  children: []
+  reverseDialogueToStartAfterNode: 0
+  isMonologue: 0
+--- !u!114 &6146453257776619100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
+  m_Name: 220d4c7a-1c3c-4ed6-8ef6-3edefbe290a2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Pedro.
+  children:
+  - 8ad9264a-9725-45ea-a74d-b23afba18104
+  reverseDialogueToStartAfterNode: 0
+  isMonologue: 0
+--- !u!114 &9070126894154982748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
+  m_Name: 84c49d7c-c395-45e1-ae39-39867a6a9ad3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What is this place?
+  children:
+  - 304e580c-1293-42fd-ac79-4679ac5372c8
+  reverseDialogueToStartAfterNode: 0
+  isMonologue: 0
