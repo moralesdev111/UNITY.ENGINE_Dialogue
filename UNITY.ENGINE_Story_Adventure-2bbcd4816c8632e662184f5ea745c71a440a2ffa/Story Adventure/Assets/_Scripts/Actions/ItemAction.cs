@@ -10,17 +10,9 @@ public class ItemAction : Actions
 	public Item CurrentItem { get { return currentItem; } }
 	public int itemID;
 
-	public void ChangeItem(Item item)
-	{
-		if(currentItem.itemID == item.itemID)
-		{
-			return;
-		}
-		currentItem.itemID = item.itemID;
-	}
 	public override void Act()
 	{
-		if(playerGivesItemAway) // give item
+		if(playerGivesItemAway) // player gives item
 		{
 			if(DataManager.Instance.Inventory.CheckIfHasItem(currentItem))
 			{
@@ -32,7 +24,7 @@ public class ItemAction : Actions
 				ExtensionLibrary.RunActions(noActions);
 			}
 		}
-		else // receive item
+		else // player receives item
 		{
 			DataManager.Instance.Inventory.AddItemToInventory(currentItem);
 		}

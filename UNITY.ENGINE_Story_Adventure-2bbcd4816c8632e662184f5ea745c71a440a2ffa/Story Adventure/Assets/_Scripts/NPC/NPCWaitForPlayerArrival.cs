@@ -18,9 +18,19 @@ public class NPCWaitForPlayerArrival : MonoBehaviour
 
 		player.PlayerMovement.SetFacingDirection(transform.position);
 
-		for (int i = 0; i < npc.toDoActions.Length; i++)
+		if (npc.toDoAutoActions != null)
 		{
-			npc.toDoActions[i].Act();
+			for (int i = 0; i < npc.toDoAutoActions.Length; i++)
+			{
+				npc.toDoAutoActions[i].Act();
+				if (npc.dialogueTriggerActions != null)
+				{
+					for (int j = 0; j < npc.dialogueTriggerActions.Length; j++)
+					{
+						//npc.dialogueTriggerActions[i].Act();
+					}
+				}
+			}
 		}
 	}
 }

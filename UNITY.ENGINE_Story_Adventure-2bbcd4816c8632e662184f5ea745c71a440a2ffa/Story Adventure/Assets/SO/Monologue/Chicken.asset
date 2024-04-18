@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: 8855164254714155679}
+  isMonologue: 1
 --- !u!114 &8855164254714155679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30,4 +31,3 @@ MonoBehaviour:
   text: So this is where all the noise was coming from!
   children: []
   reverseDialogueToStartAfterNode: 0
-  isMonologue: 1

@@ -4,7 +4,7 @@ using UnityEngine;
 
  public class DialogueCurrentParticipants : MonoBehaviour
     {
-        private GameObject activeNPCSpeaker;
+        [SerializeField] private GameObject activeNPCSpeaker;
 		public GameObject ActiveNPCSpeaker { get { return activeNPCSpeaker; } }
 		[SerializeField] private List<GameObject> globalNPCSpeakers = new List<GameObject>();
         [SerializeField] private PlayerConversant playerConversant;
@@ -13,6 +13,7 @@ using UnityEngine;
 		private void Start()
 		{
             playerConversant.onNewDialogue += GetActiveNPCSpeaker;
+			playerConversant.onDialogueFinish += ResetActiveNPCSpeaker;
 		}
 
 		public void GetActiveNPCSpeaker()
@@ -28,6 +29,11 @@ using UnityEngine;
                     return;
                 }
 			}
+		}
+
+		public void ResetActiveNPCSpeaker()
+		{
+			activeNPCSpeaker = null;
 		}
 	}
 

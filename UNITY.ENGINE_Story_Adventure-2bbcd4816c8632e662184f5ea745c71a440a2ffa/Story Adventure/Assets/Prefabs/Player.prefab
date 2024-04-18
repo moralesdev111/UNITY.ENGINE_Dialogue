@@ -16,9 +16,11 @@ GameObject:
   - component: {fileID: 3015567817838014477}
   - component: {fileID: 8836219840789225805}
   - component: {fileID: 2102233915670834411}
+  - component: {fileID: 1656757768715844762}
+  - component: {fileID: 8313831188305546868}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,6 +173,33 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1656757768715844762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5179398283341334998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f003192b37674ff4e9466dab2d35a316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerBubbleSpeakTime: 2.5
+--- !u!114 &8313831188305546868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5179398283341334998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82358ac22a1bf154ea6b72eef08acc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  player: {fileID: 2331486736955534397}
 --- !u!1 &5544472161991079572
 GameObject:
   m_ObjectHideFlags: 0

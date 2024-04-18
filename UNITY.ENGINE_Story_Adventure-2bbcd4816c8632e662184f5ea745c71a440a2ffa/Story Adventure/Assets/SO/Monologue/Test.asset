@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60dba2d4daa20104f9757b66e4f4b64e, type: 3}
-  m_Name: Test...
+  m_Name: Test
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 7261122810355665175}
---- !u!114 &7261122810355665175
+  - {fileID: 9118012875215734368}
+  isMonologue: 1
+--- !u!114 &9118012875215734368
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24,10 +25,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
-  m_Name: a7e96776-4fe4-46ff-a6a9-ed066ab661c6
+  m_Name: d001a1f7-ec46-4fbd-8b53-fafe3ea3eff0
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
+  isPlayerSpeaking: 1
   text: 
   children: []
   reverseDialogueToStartAfterNode: 0
-  isMonologue: 0

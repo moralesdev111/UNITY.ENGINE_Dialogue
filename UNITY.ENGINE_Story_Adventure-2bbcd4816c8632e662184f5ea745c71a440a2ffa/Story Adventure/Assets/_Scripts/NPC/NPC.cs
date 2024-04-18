@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour, playerIInteracteable
 {
-	public Actions[] toDoActions;
+	public Actions[] toDoAutoActions;
+	public Actions[] dialogueTriggerActions;
 	[SerializeField] private float stoppingDistance = 1.0f;
 	private NPCWaitForPlayerArrival NPCWaitForPlayerArrival;
 

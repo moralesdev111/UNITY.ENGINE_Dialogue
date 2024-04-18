@@ -13,8 +13,7 @@ public class DialogueNode : ScriptableObject
 		private Rect rect = new Rect(0,0, 200, 100);
 		[SerializeField] private bool reverseDialogueToStartAfterNode = false;
 		public bool ReverseDialogueToStartAfterNode { get { return reverseDialogueToStartAfterNode; } }
-		[SerializeField] private bool isMonologue = false;
-		public bool IsMonologue { get {  return isMonologue; } }
+		
 
 		public Rect GetRect() { return rect; }
 		public string GetText() { return text; }

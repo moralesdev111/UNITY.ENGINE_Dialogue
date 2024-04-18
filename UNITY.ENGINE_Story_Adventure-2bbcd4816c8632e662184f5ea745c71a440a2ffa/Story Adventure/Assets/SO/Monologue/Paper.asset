@@ -16,7 +16,6 @@ MonoBehaviour:
   text: Paper... just paper....
   children: []
   reverseDialogueToStartAfterNode: 0
-  isMonologue: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31,3 +30,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -6570370119130895342}
+  isMonologue: 1

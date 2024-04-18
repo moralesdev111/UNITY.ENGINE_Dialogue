@@ -10,6 +10,8 @@ public class Dialogue : ScriptableObject, ISerializationCallbackReceiver
 	[SerializeField] private List<DialogueNode> nodes = new List<DialogueNode>();
 	private Vector2 newNodeOffsetVector = new Vector2(250f, 0f);
 	private Dictionary<string, DialogueNode> nodeLookupDictionary = new Dictionary<string, DialogueNode>();
+	[SerializeField] private bool isMonologue = false;
+	public bool IsMonologue { get { return isMonologue; } }
 
 
 	private void OnValidate()

@@ -37,9 +37,9 @@ public class Inventory : MonoBehaviour
 
 	public bool CheckIfHasItem(Item item)
 	{
-		for (int i = 0; i < inventorySpace; i++)
+		for (int i = 0; i < items.Count; i++)
 		{
-			if (items[i].itemID == item.itemID)
+			if (items[i] == item)
 			{
 				return true;
 			}

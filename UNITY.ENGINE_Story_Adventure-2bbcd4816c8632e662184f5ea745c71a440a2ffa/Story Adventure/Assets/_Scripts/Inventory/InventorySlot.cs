@@ -64,6 +64,10 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 	public void OnPointerClick(PointerEventData eventData)
 	{
 		Dialogue dialogue = GetItemInSlot().dialogue;
-		DataManager.Instance.DialogueCurrentParticipants.PlayerConversant.StartDialogue(dialogue);
+		
+		if(DataManager.Instance.DialogueCurrentParticipants.PlayerConversant != null)
+		{
+			DataManager.Instance.DialogueCurrentParticipants.PlayerConversant.StartDialogue(dialogue);
+		}		
 	}
 }
