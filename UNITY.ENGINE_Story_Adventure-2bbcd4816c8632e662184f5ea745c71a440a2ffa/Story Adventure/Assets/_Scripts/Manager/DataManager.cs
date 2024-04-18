@@ -11,6 +11,9 @@ public class DataManager : MonoBehaviour
 	[SerializeField] private DialogueCurrentParticipants dialogueCurrentParticipants;
 	public DialogueCurrentParticipants DialogueCurrentParticipants { get { return dialogueCurrentParticipants; } }
 
+	public string previousSceneName {  get; private set; }
+	public SceneManager SceneManager { get; private set; }
+
 
 	private void Awake()
 	{
@@ -23,5 +26,11 @@ public class DataManager : MonoBehaviour
 		{
 			Destroy(this);
 		}
+		SceneManager = GetComponentInChildren<SceneManager>();
+	}
+
+	public void SetPreviousSceneName(string name)
+	{
+		previousSceneName = name;
 	}
 }
