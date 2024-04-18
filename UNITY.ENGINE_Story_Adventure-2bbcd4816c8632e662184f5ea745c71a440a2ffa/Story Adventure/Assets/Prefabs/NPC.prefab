@@ -118,6 +118,8 @@ GameObject:
   - component: {fileID: 7106790206128308547}
   - component: {fileID: 3197659889730229418}
   - component: {fileID: 3351568077183414050}
+  - component: {fileID: 8810292336177640417}
+  - component: {fileID: 3072092077572251031}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -226,5 +228,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3abe2f023ba249489de74ccc7a9fac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toDoActions: []
+  toDoAutoActions: []
+  dialogueTriggerActions: []
   stoppingDistance: 2
+--- !u!114 &8810292336177640417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208426710753755800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3545d6070f2bd1148a0df6c3719661f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3072092077572251031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208426710753755800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf6f2269206ae4419550e6162e265be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
+  playerConversant: {fileID: 0}

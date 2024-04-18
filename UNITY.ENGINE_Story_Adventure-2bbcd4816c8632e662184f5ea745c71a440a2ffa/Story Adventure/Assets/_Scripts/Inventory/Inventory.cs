@@ -13,6 +13,8 @@ public class Inventory : MonoBehaviour
 	public List<Item> Items { get { return items;} }
 	public delegate void OnItemChanged();
 	public OnItemChanged uiChangeTriggered;
+	[SerializeField] private InventoryUI inventoryUI;
+	public InventoryUI InventoryUI { get {  return inventoryUI; } }
 
 	public bool AddItemToInventory(Item item)
 	{

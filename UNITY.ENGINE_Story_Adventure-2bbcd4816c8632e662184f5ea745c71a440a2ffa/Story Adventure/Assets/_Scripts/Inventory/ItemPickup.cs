@@ -9,8 +9,8 @@ using UnityEngine.UI;
 public class ItemPickup : MonoBehaviour, IInteracteable
 {
 	[SerializeField] private Item item;
-	[SerializeField] private Image toolTip;
-	[SerializeField] private TextMeshProUGUI toolTipText;
+	private Image toolTip;
+	private TextMeshProUGUI toolTipText;
 
 	private void Start()
 	{

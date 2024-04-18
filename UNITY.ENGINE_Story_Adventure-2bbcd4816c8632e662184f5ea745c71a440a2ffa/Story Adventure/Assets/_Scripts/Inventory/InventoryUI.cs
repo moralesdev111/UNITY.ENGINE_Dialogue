@@ -9,7 +9,8 @@ public class InventoryUI : MonoBehaviour
 	[SerializeField] private Transform slotParent;
 	[SerializeField] private GameObject slotPrefab;
 	private InventorySlot[] slots;
-	[SerializeField] private Image inventorybackgroundUI;
+	[SerializeField] private Image inventoryBackgroundUI;
+	public Image InventorybackgroundUI { get { return inventoryBackgroundUI; } }
 	[SerializeField] private Button inventoryToggleButton;
 	
 
@@ -53,13 +54,13 @@ public class InventoryUI : MonoBehaviour
 
 	void ToggleInventoryUI()
 	{
-		if(inventorybackgroundUI.gameObject.activeInHierarchy)
+		if(inventoryBackgroundUI.gameObject.activeInHierarchy)
 		{
-			inventorybackgroundUI.gameObject.SetActive(false);
+			inventoryBackgroundUI.gameObject.SetActive(false);
 		}
 		else
 		{
-			inventorybackgroundUI.gameObject.SetActive(true);
+			inventoryBackgroundUI.gameObject.SetActive(true);
 		}
 	}
 }

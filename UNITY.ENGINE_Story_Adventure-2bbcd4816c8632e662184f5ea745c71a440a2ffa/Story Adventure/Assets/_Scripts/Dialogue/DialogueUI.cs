@@ -39,6 +39,10 @@ public class DialogueUI : MonoBehaviour
 		if (!playerConversant.DialogueIsActive()) return;
 		dialogueBubbles.HandleBubbles();
 		playerChoicesParent.gameObject.SetActive(playerConversant.GetPlayerIsChoosing());
+		if(playerChoicesParent.gameObject.activeInHierarchy)
+		{
+			DataManager.Instance.Inventory.InventoryUI.InventorybackgroundUI.gameObject.SetActive(false);
+		}
 		PlayerChoosingOrNPCSpeaks();
 	}
 
