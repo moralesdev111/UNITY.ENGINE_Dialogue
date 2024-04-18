@@ -30,7 +30,7 @@ public class DialogueBubbles : MonoBehaviour
 	{
 		if (DataManager.Instance.DialogueCurrentParticipants.ActiveNPCSpeaker != null)
 		{
-			Vector3 npcScreenPosition = Camera.main.WorldToScreenPoint(DataManager.Instance.DialogueCurrentParticipants.ActiveNPCSpeaker.transform.position + new Vector3(-3.0f, 2f, 0f));
+			Vector3 npcScreenPosition = Camera.main.WorldToScreenPoint(DataManager.Instance.DialogueCurrentParticipants.ActiveNPCSpeaker.transform.position + new Vector3(0.0f, 1f, 0f));
 			npcBubble.transform.position = npcScreenPosition;
 		}
 	}
