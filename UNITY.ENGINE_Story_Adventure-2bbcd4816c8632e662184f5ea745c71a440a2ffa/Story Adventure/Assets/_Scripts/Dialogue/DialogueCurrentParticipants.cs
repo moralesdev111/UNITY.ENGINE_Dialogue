@@ -21,8 +21,8 @@ using UnityEngine.SceneManagement;
 	private void Start()
 	{
 			globalNPCSpeakers.Clear();
-			UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
 			ResetActiveNPCSpeaker();
+			UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
 			FindGlobalNPCSpeakers();
 			playerConversant.onNewDialogue += GetActiveNPCSpeaker;
 			playerConversant.onDialogueFinish += ResetActiveNPCSpeaker;		
@@ -54,7 +54,7 @@ using UnityEngine.SceneManagement;
 					DialogueAction instanceDialogueAction = globalNPCSpeakers[i].GetComponent<DialogueAction>();
 					Dialogue instanceDialogue = instanceDialogueAction.Dialogue;
 
-					if (instanceDialogue == playerConversant.CurrentDialogue)
+					if (playerConversant.CurrentDialogue != null && instanceDialogue == playerConversant.CurrentDialogue)
 					{
 						activeNPCSpeaker = globalNPCSpeakers[i];
 						return;

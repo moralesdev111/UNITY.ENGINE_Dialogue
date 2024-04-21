@@ -19,26 +19,26 @@ public class DialogueBubbles : MonoBehaviour
 
 	public void HandleBubbles()
 	{
-		npcBubble.gameObject.SetActive(!dialogueUI.PlayerConversant.GetPlayerIsChoosing() && !dialogueUI.PlayerConversant.GetPlayerIsSpeaking());
+		npcBubble.SetActive(!dialogueUI.PlayerConversant.GetPlayerIsChoosing() && !dialogueUI.PlayerConversant.GetPlayerIsSpeaking());
 
-		playerBubble.gameObject.SetActive(dialogueUI.PlayerConversant.GetPlayerIsSpeaking());
+		playerBubble.SetActive(dialogueUI.PlayerConversant.GetPlayerIsSpeaking());
 
 		dialogueUI.PlayerBubbleText.text = dialogueUI.PlayerConversant.GetText();
 	}
 
 	public void SetNPCDialogueBubbleOffsetAccordingToPosition()
 	{
-		if (DataManager.Instance.DialogueCurrentParticipants.ActiveNPCSpeaker != null)
-		{
+		//bug as active npc not detected
+			Debug.Log("Hola");
 			Vector3 npcScreenPosition = Camera.main.WorldToScreenPoint(DataManager.Instance.DialogueCurrentParticipants.ActiveNPCSpeaker.transform.position + new Vector3(0.0f, 1f, 0f));
-			npcBubble.transform.position = npcScreenPosition;
-		}
+		npcBubble.transform.position = npcScreenPosition;
+		
 	}
 	public void SetPlayerDialogueBubbleOffsetAccordingToPosition()
 	{
 		if (dialogueUI.PlayerBody != null)
 		{
-			Vector3 playerScreenPosition = Camera.main.WorldToScreenPoint(dialogueUI.PlayerBody.transform.position + new Vector3(-2.5f, 2.0f, 0f));
+			Vector3 playerScreenPosition = Camera.main.WorldToScreenPoint(dialogueUI.PlayerBody.transform.position + new Vector3(-1.5f, 1.0f, 0f));
 			playerBubble.transform.position = playerScreenPosition;
 		}
 	}

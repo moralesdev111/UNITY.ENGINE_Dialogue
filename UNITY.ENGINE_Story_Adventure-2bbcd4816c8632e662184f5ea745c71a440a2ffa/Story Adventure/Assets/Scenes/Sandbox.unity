@@ -277,7 +277,7 @@ PrefabInstance:
     - target: {fileID: 3072092077572251031, guid: 9e0866ea76a05c24da9164ad698a7b86, type: 3}
       propertyPath: dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 8ce3c7827098e6a4b986c4db71616aba, type: 2}
+      objectReference: {fileID: 11400000, guid: 0edc984cfe090b44d9f576004abb5e7e, type: 2}
     - target: {fileID: 3072092077572251031, guid: 9e0866ea76a05c24da9164ad698a7b86, type: 3}
       propertyPath: playerConversant
       value: 

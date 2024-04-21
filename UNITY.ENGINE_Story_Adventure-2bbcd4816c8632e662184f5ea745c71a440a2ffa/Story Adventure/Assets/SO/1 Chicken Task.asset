@@ -51,7 +51,7 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   text: Okay I will search.
   children: []
-  reverseDialogueToStartAfterNode: 1
+  reverseDialogueToStartAfterNode: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,9 +85,9 @@ MonoBehaviour:
   m_Name: 2a41c4da-7ca3-48f9-8acd-dc7e9c0559be
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Bye...
+  text: ok...
   children: []
-  reverseDialogueToStartAfterNode: 0
+  reverseDialogueToStartAfterNode: 1
 --- !u!114 &3277026917693318037
 MonoBehaviour:
   m_ObjectHideFlags: 0
