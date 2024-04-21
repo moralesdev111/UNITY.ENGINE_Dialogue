@@ -16,7 +16,6 @@ MonoBehaviour:
   text: You do you...
   children: []
   reverseDialogueToStartAfterNode: 0
-  isMonologue: 0
 --- !u!114 &-6650380707410961873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34,7 +33,6 @@ MonoBehaviour:
   children:
   - 89cde8b8-ea7e-42ef-8d76-d3e211865afc
   reverseDialogueToStartAfterNode: 0
-  isMonologue: 0
 --- !u!114 &-6141713071992568712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,8 +48,7 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   text: I see, see you around
   children: []
-  reverseDialogueToStartAfterNode: 1
-  isMonologue: 0
+  reverseDialogueToStartAfterNode: 0
 --- !u!114 &-4186178216416904225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +66,6 @@ MonoBehaviour:
   children:
   - 220d4c7a-1c3c-4ed6-8ef6-3edefbe290a2
   reverseDialogueToStartAfterNode: 0
-  isMonologue: 0
 --- !u!114 &-3531031641845263321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,8 +81,7 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   text: Head straight on, theres a farm
   children: []
-  reverseDialogueToStartAfterNode: 0
-  isMonologue: 0
+  reverseDialogueToStartAfterNode: 1
 --- !u!114 &-2908111149335477495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,7 +99,6 @@ MonoBehaviour:
   children:
   - 314e1b27-1480-4683-b724-e276ed722b72
   reverseDialogueToStartAfterNode: 0
-  isMonologue: 0
 --- !u!114 &-1344100412333684549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,7 +119,6 @@ MonoBehaviour:
   - 84c49d7c-c395-45e1-ae39-39867a6a9ad3
   - 5c3176ea-f388-4630-99dc-d1c299bb41ed
   reverseDialogueToStartAfterNode: 0
-  isMonologue: 0
 --- !u!114 &-628470756545405495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,7 +136,6 @@ MonoBehaviour:
   children:
   - 2e784a3f-efdd-4e0f-989b-ab523c7de001
   reverseDialogueToStartAfterNode: 0
-  isMonologue: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +160,7 @@ MonoBehaviour:
   - {fileID: -3531031641845263321}
   - {fileID: -2908111149335477495}
   - {fileID: -6141713071992568712}
+  isMonologue: 0
 --- !u!114 &5498297104391533010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,8 +176,7 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   text: Is Madrid, huge hity btw.
   children: []
-  reverseDialogueToStartAfterNode: 0
-  isMonologue: 0
+  reverseDialogueToStartAfterNode: 1
 --- !u!114 &6146453257776619100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,7 +194,6 @@ MonoBehaviour:
   children:
   - 8ad9264a-9725-45ea-a74d-b23afba18104
   reverseDialogueToStartAfterNode: 0
-  isMonologue: 0
 --- !u!114 &9070126894154982748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,4 +211,3 @@ MonoBehaviour:
   children:
   - 304e580c-1293-42fd-ac79-4679ac5372c8
   reverseDialogueToStartAfterNode: 0
-  isMonologue: 0

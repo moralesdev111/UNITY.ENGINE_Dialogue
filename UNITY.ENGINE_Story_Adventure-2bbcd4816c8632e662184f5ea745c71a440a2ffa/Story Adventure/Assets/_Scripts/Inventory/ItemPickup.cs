@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class ItemPickup : MonoBehaviour, IInteracteable
 {
 	[SerializeField] private Item item;
-	private Image toolTip;
+	[SerializeField] private Image toolTip;
 	private TextMeshProUGUI toolTipText;
 
 	private void Start()

@@ -16,6 +16,14 @@ public class Inventory : MonoBehaviour
 	[SerializeField] private InventoryUI inventoryUI;
 	public InventoryUI InventoryUI { get {  return inventoryUI; } }
 
+	private void Awake()
+	{
+		if(DataManager.Instance != null)
+		{
+			DataManager.Instance.SetInventory(this);
+		}		
+	}
+
 	public bool AddItemToInventory(Item item)
 	{
 		if (items.Count >= inventorySpace)

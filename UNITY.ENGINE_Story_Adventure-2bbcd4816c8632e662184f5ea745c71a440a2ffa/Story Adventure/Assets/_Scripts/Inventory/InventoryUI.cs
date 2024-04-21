@@ -16,7 +16,10 @@ public class InventoryUI : MonoBehaviour
 
 	void Start()
 	{
-		inventory = DataManager.Instance.Inventory;
+		if (DataManager.Instance != null)
+		{
+			inventory = DataManager.Instance.Inventory;
+		}
 		if(inventory != null )
 		{
 			inventory.uiChangeTriggered += UpdateUI;
@@ -38,11 +41,15 @@ public class InventoryUI : MonoBehaviour
 
 	void UpdateUI()
 	{
-		ClearAllSlots();
-		for (int i = 0; i < inventory.Items.Count && i < slots.Length; i++)
+		if( inventory != null )
 		{
-			slots[i].UpdateSlotUIOnNewItem(inventory.Items[i]);
+			ClearAllSlots();
+			for (int i = 0; i < inventory.Items.Count && i < slots.Length; i++)
+			{
+				slots[i].UpdateSlotUIOnNewItem(inventory.Items[i]);
+			}
 		}
+		
 	}
 	void ClearAllSlots()
 	{

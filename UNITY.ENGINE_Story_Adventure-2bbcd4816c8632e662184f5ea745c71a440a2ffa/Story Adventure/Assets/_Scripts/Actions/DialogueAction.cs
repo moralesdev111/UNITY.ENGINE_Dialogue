@@ -8,7 +8,13 @@ public class DialogueAction : Actions
 		public Dialogue Dialogue { get { return dialogue; } }
 		[SerializeField] private PlayerConversant playerConversant;
 
-		public override void Act()
+
+	private void Start()
+	{
+		playerConversant = DataManager.Instance.DialogueCurrentParticipants.PlayerConversant;
+	}
+
+	public override void Act()
 		{
 			if(dialogue != null)
 			{

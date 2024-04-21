@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8019756457023774493
+--- !u!1 &1116046268117437580
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,57 +8,57 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6816883323090964930}
-  - component: {fileID: 7229577773375193550}
-  - component: {fileID: 6916153231291090820}
+  - component: {fileID: 1667859181199173098}
+  - component: {fileID: 5090496629982452162}
+  - component: {fileID: 3692511943895033246}
   m_Layer: 0
-  m_Name: Dialogue
+  m_Name: MasterSceneSetter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6816883323090964930
+--- !u!4 &1667859181199173098
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8019756457023774493}
+  m_GameObject: {fileID: 1116046268117437580}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 478.49905, y: 198.05168, z: -2.7769217}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7229577773375193550
+--- !u!114 &5090496629982452162
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8019756457023774493}
+  m_GameObject: {fileID: 1116046268117437580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49591e69180ed246929dac4812e63ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 301e25b0f41c64547b06e28e2df03c6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeNPCSpeaker: {fileID: 0}
-  globalNPCSpeakers: []
-  playerConversant: {fileID: 0}
---- !u!114 &6916153231291090820
+  DDoL: {fileID: 4341861031948385177, guid: b42a6b65b91587d46bfb6d5ab7436299, type: 3}
+--- !u!114 &3692511943895033246
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8019756457023774493}
+  m_GameObject: {fileID: 1116046268117437580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd98dd460ebff5b41b3e9497eb81a7f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 65c4faeb491f9394e97ba31a88aa9d04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 0}
-  dialogueBubbles: {fileID: 0}
+  spawnEntries:
+  - previousSceneName: City
+    spawnPosition: {x: -8, y: 0, z: 0}
+    spawnDirection: {x: -1, y: 0, z: 0}

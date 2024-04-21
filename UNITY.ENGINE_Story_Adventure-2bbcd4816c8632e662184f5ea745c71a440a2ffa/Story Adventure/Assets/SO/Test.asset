@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8791036832290272298
+--- !u!114 &-8294432115798063360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
-  m_Name: 3e6e1a4f-5e05-4045-adf0-309ea9b19a76
+  m_Name: fd923e56-c2e6-4b9f-b49f-863a0f71c8a3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Sorry no.
+  text: Bye...
   children:
-  - 2a41c4da-7ca3-48f9-8acd-dc7e9c0559be
+  - c782bfb6-0280-44ab-9e2d-6b663738a089
   reverseDialogueToStartAfterNode: 0
---- !u!114 &-8217460389742716876
+--- !u!114 &-7309945648784769787
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27,31 +27,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
-  m_Name: 2e335a5d-be79-452c-a7f3-f3edb3211057
+  m_Name: fca9115b-e371-4f5e-ad12-e89bf2e290bd
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Hello friend, I am in need of 1 chicken.
+  text: ok
   children:
-  - 4ba5280f-40d7-46ce-9a38-3e493e604b51
-  - 3e6e1a4f-5e05-4045-adf0-309ea9b19a76
-  - 3b59c9b1-0d62-4ba5-a7e8-a90e39189da6
+  - eb51335f-57af-423a-8a4d-43b4ab839565
   reverseDialogueToStartAfterNode: 0
---- !u!114 &-6915106461003207335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
-  m_Name: 3b59c9b1-0d62-4ba5-a7e8-a90e39189da6
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: Okay I will search.
-  children: []
-  reverseDialogueToStartAfterNode: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,17 +44,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60dba2d4daa20104f9757b66e4f4b64e, type: 3}
-  m_Name: 1 Chicken Task
+  m_Name: Test
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: -8217460389742716876}
-  - {fileID: 3549043072308839944}
-  - {fileID: 3277026917693318037}
-  - {fileID: -8791036832290272298}
-  - {fileID: 2368155852243796904}
-  - {fileID: -6915106461003207335}
+  - {fileID: 6459214332887927860}
+  - {fileID: -8294432115798063360}
+  - {fileID: 6483517368839536250}
+  - {fileID: 8734065577332846702}
+  - {fileID: -7309945648784769787}
+  - {fileID: 9145321613883788438}
   isMonologue: 0
---- !u!114 &2368155852243796904
+--- !u!114 &6459214332887927860
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,13 +64,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
-  m_Name: 2a41c4da-7ca3-48f9-8acd-dc7e9c0559be
+  m_Name: def1d0f2-0fb9-4559-b70e-440cf8d3b068
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Bye...
-  children: []
+  text: Hello
+  children:
+  - fd923e56-c2e6-4b9f-b49f-863a0f71c8a3
+  - 0208314b-b58d-47f2-87d8-686f32dc98ff
   reverseDialogueToStartAfterNode: 0
---- !u!114 &3277026917693318037
+--- !u!114 &6483517368839536250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,13 +82,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
-  m_Name: 7c324ab0-2b47-45e6-9565-cf5390f1d453
+  m_Name: c782bfb6-0280-44ab-9e2d-6b663738a089
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Thanks.
+  text: Okay!!!!!
   children: []
-  reverseDialogueToStartAfterNode: 0
---- !u!114 &3549043072308839944
+  reverseDialogueToStartAfterNode: 1
+--- !u!114 &8734065577332846702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,10 +98,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
-  m_Name: 4ba5280f-40d7-46ce-9a38-3e493e604b51
+  m_Name: 0208314b-b58d-47f2-87d8-686f32dc98ff
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Take it!
+  text: finish
   children:
-  - 7c324ab0-2b47-45e6-9565-cf5390f1d453
+  - fca9115b-e371-4f5e-ad12-e89bf2e290bd
+  reverseDialogueToStartAfterNode: 0
+--- !u!114 &9145321613883788438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792796b27c1f9294e8df0696ababf141, type: 3}
+  m_Name: eb51335f-57af-423a-8a4d-43b4ab839565
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: A
+  children: []
   reverseDialogueToStartAfterNode: 0

@@ -6,6 +6,7 @@ public class Monologue : MonoBehaviour
 {
 	[SerializeField] private DialogueUI dialogueUI;
 	[SerializeField] private DialogueBubbles dialogueBubbles;
+
 	// Start is called before the first frame update
 	void Start()
 	{

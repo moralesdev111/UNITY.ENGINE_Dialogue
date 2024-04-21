@@ -8,8 +8,10 @@ public class DataManager : MonoBehaviour
 
 	[SerializeField] private Inventory inventory;
 	public Inventory Inventory { get { return inventory; } }
+	public void SetInventory (Inventory inventory) {this.inventory = inventory; }
 	[SerializeField] private DialogueCurrentParticipants dialogueCurrentParticipants;
 	public DialogueCurrentParticipants DialogueCurrentParticipants { get { return dialogueCurrentParticipants; } }
+	public void SetDialogueCurrentParticipants(DialogueCurrentParticipants dialogueCurrentParticipants) { this.dialogueCurrentParticipants = dialogueCurrentParticipants; }
 
 	public string previousSceneName {  get; private set; }
 	public SceneManager SceneManager { get; private set; }
@@ -20,11 +22,6 @@ public class DataManager : MonoBehaviour
 		if (Instance == null)
 		{
 			Instance = this;
-			DontDestroyOnLoad(gameObject);
-		}
-		else
-		{
-			Destroy(this);
 		}
 		SceneManager = GetComponentInChildren<SceneManager>();
 	}
