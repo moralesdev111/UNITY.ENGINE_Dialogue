@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : MonoBehaviour, playerIInteracteable
+public class Interact : MonoBehaviour
 {
 	public Actions[] toDoAutoActions;
 	public Actions[] dialogueTriggerActions;
 	[SerializeField] private float stoppingDistance = 1.0f;
-	private NPCWaitForPlayerArrival NPCWaitForPlayerArrival;
+	private WaitPlayerForInteract WaitPlayerForInteract;
 
 	private void Start()
 	{
-		NPCWaitForPlayerArrival = GetComponent<NPCWaitForPlayerArrival>();
-		NPCWaitForPlayerArrival.Npc = this;
+		WaitPlayerForInteract = GetComponent<WaitPlayerForInteract>();
+		WaitPlayerForInteract.Interact = this;
 	}
 
 	public Vector3 NPCInteractionPosition()
@@ -20,8 +20,8 @@ public class NPC : MonoBehaviour, playerIInteracteable
 		return transform.position + transform.forward * stoppingDistance;
 	}
 
-	public void Interact(Player player)
+	public void Interaction(Player player)
 	{
-		StartCoroutine(NPCWaitForPlayerArrival.WaitForPlayerArrival(player));
+		StartCoroutine(WaitPlayerForInteract.WaitForPlayerArrival(player));
 	}
 }

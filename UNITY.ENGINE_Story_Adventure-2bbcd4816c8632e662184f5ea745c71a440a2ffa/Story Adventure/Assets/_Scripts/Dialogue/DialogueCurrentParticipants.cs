@@ -35,7 +35,7 @@ using UnityEngine.SceneManagement;
 
 	private void FindGlobalNPCSpeakers()
 	{
-		NPC[] npcs = FindObjectsOfType<NPC>();
+		Interact[] npcs = FindObjectsOfType<Interact>();
 		for (int i = 0; i < npcs.Length; i++)
 		{
 			if (npcs[i].GetComponent<DialogueAction>())

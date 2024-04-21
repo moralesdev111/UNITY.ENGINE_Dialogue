@@ -6,11 +6,13 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ItemPickup : MonoBehaviour, IInteracteable
+public class ItemPickup : MonoBehaviour
 {
 	[SerializeField] private Item item;
+	public Item Item { get { return item; } }
 	[SerializeField] private Image toolTip;
 	private TextMeshProUGUI toolTipText;
+	[SerializeField] private PickupAction pickupAction;
 
 	private void Start()
 	{
@@ -20,24 +22,13 @@ public class ItemPickup : MonoBehaviour, IInteracteable
 
 	public void OnMouseOver()
 	{
-		Interact();
+		HandleToolTipOnHover();
 	}
 
 	public void OnMouseExit()
 	{
 		toolTip.gameObject.SetActive(false);
 	}
-
-	public void Interact()
-	{
-		HandleToolTipOnHover();
-		if (Input.GetMouseButtonDown(0))
-		{
-			DataManager.Instance.Inventory.AddItemToInventory(item);
-			Destroy(gameObject);
-		}
-	}
-
 	private void HandleToolTipOnHover()
 	{
 		toolTipText.text = item.itemName;

@@ -123,6 +123,38 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &785705848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286992694331229319, guid: cd687feec6936da4c91b4279db74fff0, type: 3}
+  m_PrefabInstance: {fileID: 1159669905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &785705849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785705848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a98400b810b3a48b1f224fe137191d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toDoAutoActions:
+  - {fileID: 785705850}
+  dialogueTriggerActions: []
+  stoppingDistance: 1
+--- !u!114 &785705850 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7381402202259649969, guid: cd687feec6936da4c91b4279db74fff0, type: 3}
+  m_PrefabInstance: {fileID: 1159669905}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785705848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aea710e0a5839248abc0fe066f51a31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1044935277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -259,10 +291,14 @@ PrefabInstance:
       propertyPath: sceneTarget
       value: Sandbox
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1772256269622279382, guid: cd687feec6936da4c91b4279db74fff0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1286992694331229319, guid: cd687feec6936da4c91b4279db74fff0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 785705849}
   m_SourcePrefab: {fileID: 100100000, guid: cd687feec6936da4c91b4279db74fff0, type: 3}
 --- !u!1001 &1180245974
 PrefabInstance:

@@ -23,11 +23,11 @@ public class PlayerRaycast : MonoBehaviour
 
 	private void GetNPCAndMoveToPosition(RaycastHit hit)
 	{
-		NPC interactable = hit.collider.GetComponent<NPC>();
+		Interact interactable = hit.collider.GetComponent<Interact>();
 		if (interactable)
 		{
 			player.PlayerMovement.MovePlayerToPosition(interactable.NPCInteractionPosition());
-			interactable.Interact(player);
+			interactable.Interaction(player);
 		}
 		else
 		{
