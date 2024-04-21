@@ -125,6 +125,7 @@ public class PlayerConversant : MonoBehaviour
 		{
 			currentDialogue = null;
 			currentNode = null;
+			onDialogueFinish();
 		}
 	}
 
